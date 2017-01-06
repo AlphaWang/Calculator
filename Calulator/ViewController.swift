@@ -28,5 +28,13 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var displayDigit: UILabel!
+    
+    @IBAction func performOperation(_ sender: UIButton) {
+        if let methematicalSymbol = sender.currentTitle {
+            if methematicalSymbol == "π" {
+                displayDigit.text = String(M_PI)
+            }
+        }
+    }
 }
 
