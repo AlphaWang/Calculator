@@ -97,12 +97,9 @@
 		DE8527E51E1FBEE100014471 /* Calulator */ = {
 			isa = PBXGroup;
 			children = (
-				DE8527E61E1FBEE100014471 /* AppDelegate.swift */,
 				DE8527E81E1FBEE100014471 /* ViewController.swift */,
 				DE8527EA1E1FBEE100014471 /* Main.storyboard */,
-				DE8527ED1E1FBEE100014471 /* Assets.xcassets */,
-				DE8527EF1E1FBEE100014471 /* LaunchScreen.storyboard */,
-				DE8527F21E1FBEE100014471 /* Info.plist */,
+				DE8528141E1FCDC100014471 /* Supporting Files */,
 			);
 			path = Calulator;
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				DE8528081E1FBEE100014471 /* Info.plist */,
 			);
 			path = CalulatorUITests;
+			sourceTree = "<group>";
+		};
+		DE8528141E1FCDC100014471 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE8527E61E1FBEE100014471 /* AppDelegate.swift */,
+				DE8527ED1E1FBEE100014471 /* Assets.xcassets */,
+				DE8527EF1E1FBEE100014471 /* LaunchScreen.storyboard */,
+				DE8527F21E1FBEE100014471 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +201,7 @@
 				TargetAttributes = {
 					DE8527E21E1FBEE100014471 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6T8H64RYKA;
 						ProvisioningStyle = Automatic;
 					};
 					DE8527F61E1FBEE100014471 = {
@@ -412,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6T8H64RYKA;
 				INFOPLIST_FILE = Calulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alphawang.com.Calulator;
@@ -424,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6T8H64RYKA;
 				INFOPLIST_FILE = Calulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alphawang.com.Calulator;
