@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var userIsInTheMiddleOfTyping = false
 
     @IBAction func touchDigit(_ sender: UIButton) {
         // `!` unwarp Optional, but would cause fatal error: unexpectedly found nil while unwrapping an Optional value
         let digit = sender.currentTitle!
-        let textCurrentlyInDisplay = displayDigit!.text!
-        displayDigit!.text = textCurrentlyInDisplay + digit
+        
+        if userIsInTheMiddleOfTyping {
+            let textCurrentlyInDisplay = displayDigit!.text!
+            displayDigit!.text = textCurrentlyInDisplay + digit
+        } else {
+            displayDigit!.text = digit
+        }
+        userIsInTheMiddleOfTyping = true
         
         print("touched \(digit) digit")
     }
     
-    @IBOutlet weak var displayDigit: UILabel?
+    @IBOutlet weak var displayDigit: UILabel? // it's an Optional type
 }
 
