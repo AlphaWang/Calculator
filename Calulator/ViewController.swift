@@ -17,16 +17,16 @@ class ViewController: UIViewController {
         let digit = sender.currentTitle!
         
         if userIsInTheMiddleOfTyping {
-            let textCurrentlyInDisplay = displayDigit!.text!
-            displayDigit!.text = textCurrentlyInDisplay + digit
+            let textCurrentlyInDisplay = displayDigit.text!
+            displayDigit.text = textCurrentlyInDisplay + digit
         } else {
-            displayDigit!.text = digit
+            displayDigit.text = digit
         }
         userIsInTheMiddleOfTyping = true
         
         print("touched \(digit) digit")
     }
     
-    @IBOutlet weak var displayDigit: UILabel? // it's an Optional type
+    @IBOutlet weak var displayDigit: UILabel!
 }
 
