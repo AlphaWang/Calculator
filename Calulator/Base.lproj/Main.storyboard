@@ -46,7 +46,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92146596859999996" green="0.92146596859999996" blue="0.92146596859999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="9"/>
                                 <connections>
                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOX-Ln-3gt"/>
                                 </connections>

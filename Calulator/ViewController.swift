@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func touchDigit(_ sender: UIButton) {
+        // `!` would cause fatal error: unexpectedly found nil while unwrapping an Optional value
         let digit = sender.currentTitle!
         print("touched \(digit) digit")
     }
