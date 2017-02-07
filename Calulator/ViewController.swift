@@ -14,6 +14,10 @@ class ViewController: UIViewController {
 
     @IBAction func touchDigit(_ sender: UIButton) {
         // `!` unwarp Optional, but would cause fatal error: unexpectedly found nil while unwrapping an Optional value
+        // UIButton#currentTitle type is `String?`
+        
+        // this var was never mutated, use `let` instead.
+        // and swift will infer the type, let digit: String =
         let digit = sender.currentTitle!
         
         if userIsInTheMiddleOfTyping {
