@@ -37,6 +37,16 @@ class ViewController: UIViewController {
     // UILabel! means an UILabel type
     @IBOutlet weak var displayDigit: UILabel!
     
+    // to avoid type convert
+    var displayValue: Double {
+        get {
+            return Double(displayDigit.text!)!
+        }
+        set {
+            displayDigit.text = String(newValue)
+        }
+    }
+    
     // drag the button to here, will create an action.
     @IBAction func performOperation(_ sender: UIButton) {
         userIsInTheMiddleOfTyping = false
@@ -44,9 +54,11 @@ class ViewController: UIViewController {
         // unwrap only if it's not nil
         if let methematicalSymbol = sender.currentTitle {
             if methematicalSymbol == "π" {
-                displayDigit.text = String(M_PI)
+                displayValue = M_PI;
+                // displayDigit.text = String(M_PI)
             }
         }
     }
+    
 }
 
