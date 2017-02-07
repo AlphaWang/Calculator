@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // should have an initial value.
     var userIsInTheMiddleOfTyping = false
 
     @IBAction func touchDigit(_ sender: UIButton) {
@@ -31,6 +32,9 @@ class ViewController: UIViewController {
         print("touched \(digit) digit")
     }
     
+    // drag the label to here, will create a property.
+    // UILabel? means an Optional type
+    // UILabel! means an UILabel type
     @IBOutlet weak var displayDigit: UILabel!
     
     @IBAction func performOperation(_ sender: UIButton) {
