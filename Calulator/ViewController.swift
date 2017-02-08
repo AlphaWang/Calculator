@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     // UILabel! means an UILabel type
     @IBOutlet weak var displayDigit: UILabel!
     
-    // to avoid type convert
+    // computed property : to avoid type convert
     var displayValue: Double {
         get {
             return Double(displayDigit.text!)!
